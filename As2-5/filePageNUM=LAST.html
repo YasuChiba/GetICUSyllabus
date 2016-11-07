@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html PUBLIC "HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Use IE7 mode -->
+    <meta name="robots" content="noindex,nofollow" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><title>
+	Search Course Offerings
+</title><link href="../App_Themes/css/Sample.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/css/Questionnaire.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/css/Essay.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="ctl00_bdy_base" class="student_color">
+    <form name="aspnetForm" method="post" action="SearchCO.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjEwNjYyNjU3D2QWAmYPZBYCAgMPFgIeBWNsYXNzBQ1zdHVkZW50X2NvbG9yFgICAQ9kFggCAQ8PFgIeC1Bvc3RCYWNrVXJsBQ9TdHVkZW50VG9wLmFzcHhkZAIDDw8WAh4EVGV4dAUIYzE5MTAzMmlkZAIFDw8WAh8CBQ9DSElCQSwgWUFTVUhJUkFkZAILD2QWDAINDxBkEBUJBDIwMTYEMjAxNQQyMDE0BDIwMTMEMjAxMgQyMDExBDIwMTAEMjAwOQQyMDA4FQkEMjAxNgQyMDE1BDIwMTQEMjAxMwQyMDEyBDIwMTEEMjAxMAQyMDA5BDIwMDgUKwMJZ2dnZ2dnZ2dnFgFmZAIVDxBkDxY0ZgIBAgICAwIEAgUCBgIHAggCCQIKAgsCDAINAg4CDwIQAhECEgITAhQCFQIWAhcCGAIZAhoCGwIcAh0CHgIfAiACIQIiAiMCJAIlAiYCJwIoAikCKgIrAiwCLQIuAi8CMAIxAjICMxY0EGVlZxAFGj09IENvbGxlZ2UtV2lkZSBDb3Vyc2VzID09BQRDMDAwZxAFM0VuZ2xpc2ggZm9yIExpYmVyYWwgQXJ0cyAoRW5nbGlzaCBMYW5ndWFnZSBQcm9ncmFtKQUEQzAwMWcQBRlKYXBhbmVzZSBMYW5ndWFnZSBQcm9ncmFtBQRDMDAyZxAFEUdlbmVyYWwgRWR1Y2F0aW9uBQRDMDAzZxAFHUhlYWx0aCBhbmQgUGh5c2ljYWwgRWR1Y2F0aW9uBQRDMDA0ZxAFD1dvcmxkIExhbmd1YWdlcwUEQzAwNWcQBR1UZWFjaGVyIENlcnRpZmljYXRpb24gUHJvZ3JhbQUEQzAwNmcQBRtDdXJhdG9yaWFsIFRyYWluaW5nIFByb2dyYW0FBEMwMDdnEAUQU2VydmljZSBMZWFybmluZwUEQzAwOGcQBQZPdGhlcnMFBEMwMDlnEAUTPT0gTWFqb3IgQ291cnNlcyA9PQUETTAwMGcQBRBBbWVyaWNhbiBTdHVkaWVzBQRNQU1TZxAFDEFudGhyb3BvbG9neQUETUFOVGcQBRlBcnQgYW5kIEN1bHR1cmFsIEhlcml0YWdlBQRNQVJDZxAFDUFzaWFuIFN0dWRpZXMFBE1BU1RnEAUIQmlvbG9neSAFBE1CSU9nEAUIQnVzaW5lc3MFBE1CVVNnEAUVQ29tcGFyYXRpdmUgRWR1Y2F0aW9uBQRNQ0VEZxAFCUNoZW1pc3RyeQUETUNITWcQBRNEZXZlbG9wbWVudCBTdHVkaWVzBQRNRFBTZxAFCUVjb25vbWljcwUETUVDT2cQBQlFZHVjYXRpb24FBE1FRFVnEAUcRWR1Y2F0aW9uLCBNZWRpYSBhbmQgU29jaWV0eQUETUVNU2cQBRVFbnZpcm9ubWVudGFsIFN0dWRpZXMFBE1FTlZnEAUOR2xvYmFsIFN0dWRpZXMFBE1HTFNnEAUcR2VuZGVyIGFuZCBTZXh1YWxpdHkgU3R1ZGllcwUETUdTU2cQBQhIaXN0b3J5IAUETUhTVGcQBRhJbnRlcm5hdGlvbmFsIFJlbGF0aW9ucyAFBE1JUkxnEAUTSW5mb3JtYXRpb24gU2NpZW5jZQUETUlTQ2cQBQ1KYXBhbiBTdHVkaWVzBQRNSlBTZxAFA0xhdwUETUxBV2cQBRJMYW5ndWFnZSBFZHVjYXRpb24FBE1MRURnEAUKTGl0ZXJhdHVyZQUETUxJVGcQBQtMaW5ndWlzdGljcwUETUxOR2cQBSBNZWRpYSwgQ29tbXVuaWNhdGlvbiBhbmQgQ3VsdHVyZQUETU1DQ2cQBQtNYXRoZW1hdGljcwUETU1USGcQBQVNdXNpYwUETU1VU2cQBQ1QZWFjZSBTdHVkaWVzBQRNUENTZxAFGFBoaWxvc29waHkgYW5kIFJlbGlnaW9uIAUETVBIUmcQBQhQaHlzaWNzIAUETVBIWWcQBQhQb2xpdGljcwUETVBPTGcQBQ1QdWJsaWMgUG9saWN5BQRNUFBMZxAFClBzeWNob2xvZ3kFBE1QU1lnEAUJU29jaW9sb2d5BQRNU09DZxAFHT09IEdyYWR1YXRlIFNjaG9vbCBDb3Vyc2VzID09BQRHMDAwZxAFCUdTKE90aGVyKQUERzAwMWcQBRhFZHVjYXRpb24gYW5kIFBzeWNob2xvZ3kFBEcwMDJnEAUhUHVibGljIFBvbGljeSBhbmQgU29jaWFsIFJlc2VhcmNoBQRHMDAzZxAFE0NvbXBhcmF0aXZlIEN1bHR1cmUFBEcwMDRnEAUQTmF0dXJhbCBTY2llbmNlcwUERzAwNWcQBRNGb3IgRG9jdG9yIFN0dWRlbnRzBQRHMDA2Z2RkAhkPEGQPFhBmAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMAg0CDgIPFhAQZWVnEAUDRUxQBQRDMDAxZxAFA0pMUAUEQzAwMmcQBQJHRQUEQzAwM2cQBQ5TcGVjYWlsIFRvcGljcwUEUzAwMWcQBQFFBQJNRWcQBQFIBQJNSGcQBQJJUwUDTUlTZxAFAUwFAk1MZxAFAk5TBQNNTlNnEAUCU1MFA01TU2cQBQJQRQUEQzAwNGcQBRVEaXZpc2lvbiBvZiBFZHVjYXRpb24FBEcwMDJnEAUhRGl2aXNpb24gb2YgUHVibGljIEFkbWluaXN0cmF0aW9uBQRHMDAzZxAFH0RpdmlzaW9uIG9mIENvbXBhcmF0aXZlIEN1bHR1cmUFBEcwMDRnEAUcRGl2aXNpb24gb2YgTmF0dXJhbCBTY2llbmNlcwUERzAwNWcWAWZkAiMPEGQPFgpmAgECAgIDAgQCBQIGAgcCCAIJFgoQZWVnEAUBMQUBMWcQBQEyBQEyZxAFATMFATNnEAUBNAUBNGcQBQE1BQE1ZxAFATYFATZnEAUBNwUBN2cQBQE4BQE4ZxAFAio0BQIxNGdkZAJJDxBkZBYBZmQCUQ88KwANAQAPFgYeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnQChgweF0ZpcnN0RGlzcGxheWVkUGFnZUluZGV4ApEBZBYCZg9kFggCAQ8PFgIeB1Zpc2libGVoZGQCAg9kFhBmD2QWAgIBDxYCHwBlFgoCAQ8PFgIfAgUFMzI1MDJkZAIDDw8WAh8CBQZXaW50ZXJkZAIFDw8WAh8CBQQyMDE2ZGQCBw8PFgIfBmhkZAIJDw8WBh8CZR4LTmF2aWdhdGVVcmwFMUNvQ2hhbmdlSGlzdG9yeS5hc3B4P3llYXI9MjAxNiZ0ZXJtPTMmcmVnbm89MzI1MDIfBmhkZAIBD2QWAgIBDxYCHwBlFgQCAQ8PFgIfAgUHUUFEVDk5OWRkAgMPDxYCHwJlZGQCAg9kFgICAQ8WAh8AZRYCAgEPDxYCHwJlZGQCAw9kFgICAQ8WAh8AZRYCAgEPDxYCHwJlZGQCBA9kFgICAQ8WAh8AZRYKAgEPDxYCHwIFDkRvY3RvciBUaGVzaXMgZGQCAw8PFgIfAgUM5Y2a5aOr6KuW5paHZGQCBQ8PFgIfAmVkZAIHDw8WAh8CZWRkAgkPDxYCHwJlZGQCBQ9kFgICAQ8WAh8AZRYCAgEPDxYCHwJlZGQCBg9kFgICAQ8WAh8AZRYCAgEPDxYCHwIFBVNUQUZGZGQCBw9kFgICAQ8WAh8AZRYIAgEPDxYCHwIFATBkZAIDDxYCHwZoFgICAQ8PFgIfBwUxUHJldmlld1N5bGxhYnVzLmFzcHg/eWVhcj0yMDE2JnRlcm09MyZyZWdubz0zMjUwMmRkAgUPDxYCHwcFIENvdXJzZURlc2NyaXB0aW9uLmFzcHg/Y2lkPTExMzQ4ZGQCBw8WAh8GaBYCAgEPDxYCHwcFNFdDb3Vyc2VEZXNjcmlwdGlvbi5hc3B4P3llYXI9MjAxNiZ0ZXJtPTMmcmVnbm89MzI1MDJkZAIDD2QWEGYPZBYCAgEPFgIfAGUWCgIBDw8WAh8CBQUzMjUwM2RkAgMPDxYCHwIFBldpbnRlcmRkAgUPDxYCHwIFBDIwMTZkZAIHDw8WAh8GaGRkAgkPDxYGHwJlHwcFMUNvQ2hhbmdlSGlzdG9yeS5hc3B4P3llYXI9MjAxNiZ0ZXJtPTMmcmVnbm89MzI1MDMfBmhkZAIBD2QWAgIBDxYCHwBlFgQCAQ8PFgIfAgUHUUFEUjYwM2RkAgMPDxYCHwJlZGQCAg9kFgICAQ8WAh8AZRYCAgEPDxYCHwJlZGQCAw9kFgICAQ8WAh8AZRYCAgEPDxYCHwJlZGQCBA9kFgICAQ8WAh8AZRYKAgEPDxYCHwIFFkFkdmFuY2VkIFJlc2VhcmNoIElJSSBkZAIDDw8WAh8CBRbnibnliKXlsILploDnoJTnqbYgSUlJZGQCBQ8PFgIfAgUJNi9TQSw3L1NBZGQCBw8PFgIfAmVkZAIJDw8WAh8CZWRkAgUPZBYCAgEPFgIfAGUWAgIBDw8WAh8CZWRkAgYPZBYCAgEPFgIfAGUWAgIBDw8WAh8CBQVTVEFGRmRkAgcPZBYCAgEPFgIfAGUWCAIBDw8WAh8CBQEyZGQCAw8WAh8GaBYCAgEPDxYCHwcFMVByZXZpZXdTeWxsYWJ1cy5hc3B4P3llYXI9MjAxNiZ0ZXJtPTMmcmVnbm89MzI1MDNkZAIFDw8WAh8HBSBDb3Vyc2VEZXNjcmlwdGlvbi5hc3B4P2NpZD0xMTM1MWRkAgcPFgIfBmgWAgIBDw8WAh8HBTRXQ291cnNlRGVzY3JpcHRpb24uYXNweD95ZWFyPTIwMTYmdGVybT0zJnJlZ25vPTMyNTAzZGQCBA8PFgIfBmhkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUNY3RsMDAkaW1nX3RvcAUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRjaGtfa3lvc2hva3UFJGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3J2X2NvdXJzZQ88KwAKAgICmgEIApsBZPeSb/wx7eIJqnQhvyxXdpJupw4a" />
+
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="-zlJidGoL_Rjq4W2lKj1k6ZVx0hvPBFjJi1teEMczeZNqanGHbWoAurti0eStINONw2FrnBq9i6JcXZEs980l2xWTgI9_N8d0gARiYGUSVO6Z7Yk0" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWewLCzIjYBALjjs/0DwLj+Mr+AwLws9HQAQLw042rDAKruYiOCgKrufyiAQKrueDHCAKrudT8DwKrubiRBwKruay2DgKruZDrBQLAgKLyAgLAgJaXCgKEtOfgDwKL282OAwKK282OAwKJ282OAwK4ndPeCALPs57ZCALPs+ryDwLPs/aPBgLPs8KoDQLPs67EBQLPs7rhDALPs4a6AwLPs5LXCwLPs76+DQLPs4rbBQLFs57ZCAKEj/GbBgLv5vihBwKrkMn3CwKW67DLCALo8OX0BQLc1fzFBQKswee/AwKNme6VDALlp8HvAgLmlIagCgLB7+n9DAKEj8GbBgLv5qCWBgKZtL/xDAKW64wuApbr1MgIAquQlfkIApbrhOAFAuWn6e8CApCqjvMMAqzBg78DAujw+csFAu/mkOUCAuaU9swIAvHCkuAPAtzVkMUFAuaUypsDAo2ZtugMAo2ZyrUKAsr5vuUMAuWn/aMDApbr0N8IAsr5huMPAsuzntkIAsuz6vIPAsuz9o8GAsuzwqgNAsuzrsQFAsuzuuEMAsuzhroDAsarlv0KAojQuZIDApnEoI0GAuCS7cMJAv61nusIAvHatIUEAvDatIUEAvPatIUEAvLatIUEAvXatIUEAvTatIUEAvfatIUEAubatIUEAvHaxIYEAvLKwcsFApGl66UJAp6ll7sJApul66UJAp6li7sJAqil66UJAp+l57sJAu/1z8gKApTgzusBAojmzpQOArPGi8MDAqeSps0BAri1q9IHAtH+29oGAtyXobcBAt2XobcBAtiXobcBAsyt2ssHAp/T/N4GAp/TuEgCn9OUpQcCn9OQxAYCn9PsoA0CtLiTgAECtLjv3AkCtLirzgMCtLiHqwoCtLjDlAQCzK3aywcCn9P83gYCn9O4SAKf05SlBwKf05DEBgKf0+ygDQK0uJOAAQK0uO/cCQK0uKvOAwK0uIerCgK0uMOUBH1nCuP3V0OjupGamZavzURbkYlv" />
+    <table style="background-color:#FFFFFF;width:100%;">
+        <tr>
+            <td>
+                <input type="image" name="ctl00$img_top" id="ctl00_img_top" src="../App_Themes/img/logo_header.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$img_top&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../StudentTop.aspx&quot;, false, false))" border="0" />
+            </td>
+            <td align="right" style="color:#000000">
+                Login ID：<span id="ctl00_lbl_login_id">c191032i</span><br />
+                Name：<span id="ctl00_lbl_login_name">CHIBA, YASUHIRA</span><br />
+                
+            </td>
+        </tr>
+    </table>
+        <input type="hidden" name="ctl00$hid_member_kbn" id="ctl00_hid_member_kbn" value="0" />
+    <div>
+        
+    <style type="text/css">
+        /** 取り消し線表示 **/
+        .word_line_through {
+            text-decoration: line-through;
+        }
+        /** 変更履歴の日付 **/
+        .co_change_history {
+            color:#0000FF;
+            font-size:smaller;
+            font-weight:bold;
+            text-decoration:none;
+        }
+    </style>
+
+    <table width="98%">
+        <tr>
+            <td>
+                <a style="font-size:large;">Course Offerings</a>
+                &nbsp;&nbsp;&nbsp;
+                <a id="ctl00_ContentPlaceHolder1_lnk_by_major" disabled="disabled">by Major</a>
+                &nbsp;/&nbsp;
+                <a id="ctl00_ContentPlaceHolder1_lnk_by_division" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$lnk_by_division','')">by Division</a>
+            </td>
+            <td style="text-align:right; font-size:small">
+                <img class="link_image" src="../App_Themes/img/Play.png" border="0" />
+                <a id="ctl00_ContentPlaceHolder1_lnkChangeList" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$lnkChangeList','')">Course Offerings Change List</a>
+            </td>
+        </tr>
+    </table>
+
+    
+    <table width="98%" border="1">
+        <tr>
+            <td style="text-align:center; background-color:#eff7ff;" >
+                <span>SEARCH</span></td>
+            <td style="padding:5px 5px 5px 5px;">
+                
+                <span>Year:</span>
+                <select name="ctl00$ContentPlaceHolder1$ddl_year" id="ctl00_ContentPlaceHolder1_ddl_year">
+	<option selected="selected" value="2016">2016</option>
+	<option value="2015">2015</option>
+	<option value="2014">2014</option>
+	<option value="2013">2013</option>
+	<option value="2012">2012</option>
+	<option value="2011">2011</option>
+	<option value="2010">2010</option>
+	<option value="2009">2009</option>
+	<option value="2008">2008</option>
+
+</select>
+                &nbsp;&nbsp;
+                
+                <span>Term:</span>
+                <select name="ctl00$ContentPlaceHolder1$ddl_term" id="ctl00_ContentPlaceHolder1_ddl_term">
+	<option selected="selected" value="">ALL</option>
+	<option value="1">1:Spring</option>
+	<option value="2">2:Autumn</option>
+	<option value="3">3:Winter</option>
+
+</select>
+                &nbsp;&nbsp;
+                
+                <span id="ctl00_ContentPlaceHolder1_lbl_major">Major:</span>
+                <select name="ctl00$ContentPlaceHolder1$ddl_major" id="ctl00_ContentPlaceHolder1_ddl_major">
+	<option selected="selected" value=""></option>
+	<option value="C000">== College-Wide Courses ==</option>
+	<option value="C001">English for Liberal Arts (English Language Program)</option>
+	<option value="C002">Japanese Language Program</option>
+	<option value="C003">General Education</option>
+	<option value="C004">Health and Physical Education</option>
+	<option value="C005">World Languages</option>
+	<option value="C006">Teacher Certification Program</option>
+	<option value="C007">Curatorial Training Program</option>
+	<option value="C008">Service Learning</option>
+	<option value="C009">Others</option>
+	<option value="M000">== Major Courses ==</option>
+	<option value="MAMS">American Studies</option>
+	<option value="MANT">Anthropology</option>
+	<option value="MARC">Art and Cultural Heritage</option>
+	<option value="MAST">Asian Studies</option>
+	<option value="MBIO">Biology </option>
+	<option value="MBUS">Business</option>
+	<option value="MCED">Comparative Education</option>
+	<option value="MCHM">Chemistry</option>
+	<option value="MDPS">Development Studies</option>
+	<option value="MECO">Economics</option>
+	<option value="MEDU">Education</option>
+	<option value="MEMS">Education, Media and Society</option>
+	<option value="MENV">Environmental Studies</option>
+	<option value="MGLS">Global Studies</option>
+	<option value="MGSS">Gender and Sexuality Studies</option>
+	<option value="MHST">History </option>
+	<option value="MIRL">International Relations </option>
+	<option value="MISC">Information Science</option>
+	<option value="MJPS">Japan Studies</option>
+	<option value="MLAW">Law</option>
+	<option value="MLED">Language Education</option>
+	<option value="MLIT">Literature</option>
+	<option value="MLNG">Linguistics</option>
+	<option value="MMCC">Media, Communication and Culture</option>
+	<option value="MMTH">Mathematics</option>
+	<option value="MMUS">Music</option>
+	<option value="MPCS">Peace Studies</option>
+	<option value="MPHR">Philosophy and Religion </option>
+	<option value="MPHY">Physics </option>
+	<option value="MPOL">Politics</option>
+	<option value="MPPL">Public Policy</option>
+	<option value="MPSY">Psychology</option>
+	<option value="MSOC">Sociology</option>
+	<option value="G000">== Graduate School Courses ==</option>
+	<option value="G001">GS(Other)</option>
+	<option value="G002">Education and Psychology</option>
+	<option value="G003">Public Policy and Social Research</option>
+	<option value="G004">Comparative Culture</option>
+	<option value="G005">Natural Sciences</option>
+	<option value="G006">For Doctor Students</option>
+
+</select>
+                
+                
+                &nbsp;&nbsp;
+                
+                <br />
+                <span>FDN/AM:</span>
+                <select name="ctl00$ContentPlaceHolder1$ddl_fdnam" id="ctl00_ContentPlaceHolder1_ddl_fdnam">
+	<option selected="selected" value=""></option>
+	<option value="FDN">Foundation(基礎科目)</option>
+	<option value="AM">Area Major(専攻科目)</option>
+
+</select>
+                
+                <input id="ctl00_ContentPlaceHolder1_chk_kyoshoku" type="checkbox" name="ctl00$ContentPlaceHolder1$chk_kyoshoku" /><label for="ctl00_ContentPlaceHolder1_chk_kyoshoku">Kyoshoku</label>
+                <br />
+                
+                <span>Schedule:</span>
+                <select name="ctl00$ContentPlaceHolder1$ddl_period" id="ctl00_ContentPlaceHolder1_ddl_period">
+	<option selected="selected" value=""></option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="14">*4</option>
+
+</select>
+                <span>/</span>
+                <select name="ctl00$ContentPlaceHolder1$ddl_week" id="ctl00_ContentPlaceHolder1_ddl_week">
+	<option selected="selected" value=""></option>
+	<option value="M">月:M</option>
+	<option value="TU">火:TU</option>
+	<option value="W">水:W</option>
+	<option value="TH">木:TH</option>
+	<option value="F">金:F</option>
+	<option value="SA">土:SA</option>
+
+</select>
+                &nbsp;&nbsp;
+                <input name="ctl00$ContentPlaceHolder1$txt_schedule" type="text" id="ctl00_ContentPlaceHolder1_txt_schedule" />
+                <span style="font-size:small; color:#808080;">(ex. 2/M,4/M)</span>
+                <br />
+                
+                <span>Instructor:</span>
+                <input name="ctl00$ContentPlaceHolder1$txt_instructor" type="text" maxlength="100" id="ctl00_ContentPlaceHolder1_txt_instructor" />
+                &nbsp;&nbsp;
+                
+                <span>Title:</span>
+                <input name="ctl00$ContentPlaceHolder1$txt_course_title" type="text" maxlength="100" id="ctl00_ContentPlaceHolder1_txt_course_title" style="width:200px" />
+                <span style="font-size:small; color:#808080;">（※English/Japanese ）</span>
+                <br />
+                
+                <span>Course No.:</span>
+                <input name="ctl00$ContentPlaceHolder1$txt_course_no" type="text" size="10" id="ctl00_ContentPlaceHolder1_txt_course_no" />
+                &nbsp;&nbsp;
+                
+                <span>Reg.No.:</span>
+                <input name="ctl00$ContentPlaceHolder1$txt_reg_no" type="text" size="10" id="ctl00_ContentPlaceHolder1_txt_reg_no" />
+                &nbsp;&nbsp;
+                
+                <span>Language:</span>
+                <input name="ctl00$ContentPlaceHolder1$txt_lang" type="text" size="6" id="ctl00_ContentPlaceHolder1_txt_lang" />
+                <span style="font-size:small; color:#808080;">（※J/E/C/F/G/K/S/R）</span>
+            </td>
+            <td style="text-align:center; background-color:#eff7ff;">
+                <input type="submit" name="ctl00$ContentPlaceHolder1$btn_search" value="Search" id="ctl00_ContentPlaceHolder1_btn_search" /><br />
+                <br />
+                <span><font face="メイリオ" size="3">Results:</font></span>
+                <select name="ctl00$ContentPlaceHolder1$ddlPageSize" id="ctl00_ContentPlaceHolder1_ddlPageSize" style="font-size: small">
+	<option selected="selected" value="10">10</option>
+	<option value="20">20</option>
+	<option value="50">50</option>
+
+</select>
+                <span><font face="メイリオ" size="3">rows</font></span>
+            </td>
+        </tr>
+    </table>
+
+    <div style="width:98%; text-align:right">
+        <a href="../App_Themes/img/co_guide.png" target="_guide">コース・オファリングスの見方</a>
+        <img src="../App_Themes/img/co_help.png" alt="help" border="0" />
+    </div>
+
+    
+    <table width="98%">
+        <tr>
+            <td>
+                <div>
+	<table cellspacing="0" cellpadding="2" rules="all" border="1" id="ctl00_ContentPlaceHolder1_grv_course" width="100%">
+		<tr align="center">
+			<td colspan="8"><table border="0">
+				<tr>
+					<td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$First')">&lt;&lt;</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$145')">...</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$146')">146</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$147')">147</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$148')">148</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$149')">149</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$150')">150</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$151')">151</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$152')">152</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$153')">153</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$154')">154</a></td><td><span>155</span></td>
+				</tr>
+			</table></td>
+		</tr><tr>
+			<td width="100">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_rgno">32502</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_season">Winter</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_ay">2016</span><br />
+                                    <br />
+                                    
+                                </div>
+                            </td><td width="70">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_course_no">QADT999</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_old_cno"></span>
+                                </div>
+                           </td><td width="50">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_lang"></span>
+                                </div>
+                            </td><td width="50">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_section"></span>
+                                </div>
+                            </td><td class="word_wrap_break" width="40%">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_title_e">Doctor Thesis </span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_title_j">博士論文</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_schedule"></span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_room"></span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_comment"></span>
+                                </div>
+                            </td><td width="50">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_maxnum"></span>
+                                </div>
+                            </td><td class="word_wrap_break" width="15%">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_instructor">STAFF</span>
+                                </div>
+                            </td><td align="center" width="50">
+                                <div class="">
+                                <span id="ctl00_ContentPlaceHolder1_grv_course_ctl03_lbl_unit" style="font-weight:bold">0</span><br />
+                                
+                                
+                                
+                                <a href="CourseDescription.aspx?cid=11348" target="_course" style="display:inline-block;"> <img src="../App_Themes/img/co_d.png" border="0" /></a>
+                                
+                                
+                                </div>
+                            </td>
+		</tr><tr bgcolor="#EFF7FF">
+			<td width="100">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_rgno">32503</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_season">Winter</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_ay">2016</span><br />
+                                    <br />
+                                    
+                                </div>
+                            </td><td width="70">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_course_no">QADR603</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_old_cno"></span>
+                                </div>
+                           </td><td width="50">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_lang"></span>
+                                </div>
+                            </td><td width="50">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_section"></span>
+                                </div>
+                            </td><td class="word_wrap_break" width="40%">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_title_e">Advanced Research III </span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_title_j">特別専門研究 III</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_schedule">6/SA,7/SA</span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_room"></span><br />
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_comment"></span>
+                                </div>
+                            </td><td width="50">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_maxnum"></span>
+                                </div>
+                            </td><td class="word_wrap_break" width="15%">
+                                <div class="">
+                                    <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_instructor">STAFF</span>
+                                </div>
+                            </td><td align="center" width="50">
+                                <div class="">
+                                <span id="ctl00_ContentPlaceHolder1_grv_course_ctl04_lbl_unit" style="font-weight:bold">2</span><br />
+                                
+                                
+                                
+                                <a href="CourseDescription.aspx?cid=11351" target="_course" style="display:inline-block;"> <img src="../App_Themes/img/co_d.png" border="0" /></a>
+                                
+                                
+                                </div>
+                            </td>
+		</tr><tr align="center">
+			<td colspan="8"><table border="0">
+				<tr>
+					<td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$First')">&lt;&lt;</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$145')">...</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$146')">146</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$147')">147</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$148')">148</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$149')">149</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$150')">150</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$151')">151</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$152')">152</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$153')">153</a></td><td><a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$grv_course','Page$154')">154</a></td><td><span>155</span></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+</div>
+            </td>
+        </tr>
+    </table>
+
+
+    </div>
+    </form>
+</body>
+</html>
