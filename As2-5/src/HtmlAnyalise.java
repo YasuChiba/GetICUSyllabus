@@ -11,6 +11,9 @@ public class HtmlAnyalise {
     FileWriter fw;
     PrintWriter pw;
 
+    String year = Constatnts.year;
+
+
     HtmlAnyalise(String directory, String saveFileName) {
         this.directory = directory;
         this.saveFileName = saveFileName;
@@ -612,13 +615,13 @@ public class HtmlAnyalise {
                 String syllabus = "err";
 
                 if (rseason.equals("Spring")) {
-                    syllabus = rseason + "2016";
+                    syllabus = rseason + year;
                 }
                 if (rseason.equals("Autumn")) {
-                    syllabus = rseason + "2016";
+                    syllabus = rseason + year;
                 }
                 if (rseason.equals("Winter")) {
-                    syllabus = rseason + "2016";
+                    syllabus = rseason + year;
                 }
                 pw.printf("insert into " + syllabus + "('rgno','season','csno','lang','etitle','jtitle','schedule','room','instructor','unit','schedule_string','s11','s12','s13','s14','s15','s16','s21','s22','s23','s24','s25','s26','s31','s32','s33','s34','s35','s36','s41','s42','s43','s44','s45','s46','s51','s52','s53','s54','s55','s56','s61','s62','s63','s64','s65','s66','s71','s72','s73','s74','s75','s76','s81','s82','s83','s84','s85','s86','s91','s92','s93','s94','s95','s96') values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d');\n", rrgno, rseason, rcsno, rlang, retitle, rjtitle, rschedule, rroom, rinstructor, runit, schedule_string, p11, p12, p13, p14, p15, p16, p21, p22, p23, p24, p25, p26, p31, p32, p33, p34, p35, p36, p41, p42, p43, p44, p45, p46, p51, p52, p53, p54, p55, p56, p61, p62, p63, p64, p65, p66, p71, p72, p73, p74, p75, p76, p81, p82, p83, p84, p85, p86, lp41, lp42, lp43, lp44, lp45, lp46);
 

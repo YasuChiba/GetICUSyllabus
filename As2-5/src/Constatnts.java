@@ -8,4 +8,5 @@ public class Constatnts {
     static public String Label="Label";
     static public String PassField="PassField";
 
+    static public String year = "2017";
 }

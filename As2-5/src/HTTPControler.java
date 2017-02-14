@@ -23,6 +23,7 @@ public class HTTPControler {
     _Util util = new _Util();
     String saveDirectory = "";
     Main component;
+    String year = Constatnts.year;
 
     public HTTPControler(Main component) {
         this.component = component;
@@ -145,7 +146,7 @@ public class HTTPControler {
                         .addParameter("__PREVIOUSPAGE", DataEntity.getPreviousPage())
                         .addParameter("__EVENTVALIDATION", DataEntity.getEventValidation())
                         .addParameter("ctl00$hid_member_kbn", "0")
-                        .addParameter("ctl00$ContentPlaceHolder1$ddl_year", "2016")
+                        .addParameter("ctl00$ContentPlaceHolder1$ddl_year", year)
                         .addParameter("ctl00$ContentPlaceHolder1$ddl_term", "")
                         .addParameter("ctl00$ContentPlaceHolder1$ddl_major", "")
                         .addParameter("ctl00$ContentPlaceHolder1$ddl_fdnam", "")
@@ -169,7 +170,7 @@ public class HTTPControler {
                         .addParameter("__PREVIOUSPAGE", DataEntity.getPreviousPage())
                         .addParameter("__EVENTVALIDATION", DataEntity.getEventValidation())
                         .addParameter("ctl00$hid_member_kbn", "0")
-                        .addParameter("ctl00$ContentPlaceHolder1$ddl_year", "2016")
+                        .addParameter("ctl00$ContentPlaceHolder1$ddl_year", year)
                         .addParameter("ctl00$ContentPlaceHolder1$ddl_term", "")
                         .addParameter("ctl00$ContentPlaceHolder1$ddl_major", "")
                         .addParameter("ctl00$ContentPlaceHolder1$ddl_fdnam", "")
@@ -233,7 +234,7 @@ public class HTTPControler {
                     .addParameter("__PREVIOUSPAGE", DataEntity.getPreviousPage())//¥¥¥¥¥¥¥¥¥
                     .addParameter("__EVENTVALIDATION", DataEntity.getEventValidation())//¥¥¥¥¥¥¥¥¥
                     .addParameter("ctl00$hid_member_kbn", "0")
-                    .addParameter("ctl00$ContentPlaceHolder1$ddl_year", "2016")
+                    .addParameter("ctl00$ContentPlaceHolder1$ddl_year", year)
                     .addParameter("ctl00$ContentPlaceHolder1$ddl_term", "")
                     .addParameter("ctl00$ContentPlaceHolder1$ddl_major", "")
                     .addParameter("ctl00$ContentPlaceHolder1$ddl_fdnam", "")
